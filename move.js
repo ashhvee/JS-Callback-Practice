@@ -6,8 +6,7 @@ function move(element) {
         element.style.bottom = bottom + 'px'
     }
 
-    function moveWithArrowKeys(left, bottom, callback) {
-       function moveWithArrowKeys(left, bottom, callback){
+    function moveWithArrowKeys(left, bottom, callback){
     let direction = null;
     let x = left;
     let y = bottom;
@@ -57,9 +56,9 @@ function move(element) {
         callback(direction)
     })
 }
-    }
 
     return {
         to: moveToCoordinates,
         withArrowKeys: moveWithArrowKeys
-    }}
+    }
+}
