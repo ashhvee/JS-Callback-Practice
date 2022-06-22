@@ -3,6 +3,7 @@ move(inventory).to(0, 0)
 
 const character = newImage('assets/green-character/static.gif')
 
+//Make character appear to be walking
 function handleDirectionChange(direction){
     if(direction === null){
         character.src = 'assets/green-character/static.gif'
@@ -22,6 +23,7 @@ function handleDirectionChange(direction){
 }
 
 move(character).withArrowKeys(100, 250, handleDirectionChange)
+
 let direction = null;
 let x = 100;
 let y = 250;
@@ -54,7 +56,7 @@ document.addEventListener('keydown', function(e){
     if(e.key === 'ArrowUp'){
         direction = 'north'
     }
-    if(e.key === 'Arrow Right'){
+    if(e.key === 'ArrowRight'){
         direction = 'east'
     }
     if(e.key === 'ArrowDown'){

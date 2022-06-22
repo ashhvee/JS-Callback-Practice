@@ -7,7 +7,7 @@ function move(element) {
     }
 
     function moveWithArrowKeys(left, bottom, callback) {
-       function moveWithArrowKeys(left, bottom){
+       function moveWithArrowKeys(left, bottom, callback){
     let direction = null;
     let x = left;
     let y = bottom;
